@@ -40,6 +40,8 @@ parts:
   - caption: Dynamics
     chapters:
     - file: dynamics/dynamics-1
+    - file: dynamics/rotational_dynamics
+    - file: dynamics/six_DoF
 #     - file: dynamics/Week10/Activity1_Single_Particle_Kinetics
     - file: dynamics/Week10/Activity1_Single_Particle_Kinetics_Solution
 #     - file: dynamics/Week10/Activity2_System_Of_Particles_Kinetics
