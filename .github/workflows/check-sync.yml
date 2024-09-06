@@ -1,11 +1,11 @@
-name: Check Sync with Main
+name: Check Sync with Master
 
 on:
   pull_request:
     types: [synchronize, opened, reopened]
   push:
     branches:
-      - main
+      - master
 
 jobs:
   check-sync:
@@ -21,11 +21,11 @@ jobs:
 
     - name: Fetch main branch
       run: |
-        git fetch origin main
+        git fetch origin master
 
-    - name: Check if branch is up-to-date with main
+    - name: Check if branch is up-to-date with master
       run: |
-        git merge-base --is-ancestor origin/main HEAD
+        git merge-base --is-ancestor origin/master HEAD
     - name: Fail if not up-to-date
       if: failure()
       run: |
